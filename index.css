@@ -54,10 +54,11 @@ text-align: center;
 
   button {
     border-radius: 20px;
+    color: rgb(59, 56, 51);
   }
 
   a {
-    color: #ffffff;
+    color: #3a3333;
   }
 
   img {
@@ -69,8 +70,3 @@ text-align: center;
     position: relative;
   }
 
-
-  td, thead {
-    border: 3px solid #000000;
-    /* border-width border-style border-color */
-}
