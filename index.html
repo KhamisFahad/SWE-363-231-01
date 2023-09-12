@@ -10,32 +10,66 @@
 </head>
 
 <body>
-    <h1 style="color: black;">Code Bro</h1>
-    <h2 style="color: black;">This website will help you to become a better web developer</p>
+    <header>
+        <h1 style="color: black;">Code Bro</h1>
+        <h2 style="color: black;">This website will help you to become a better web developer</h2>
+    </header>
 
+<nav>
     <div class="topnav">
         <a href="index.html">Home</a>
         <a href="htmlPage.html">HTML</a>
         <a href="cssPage.html">CSS</a>
         <a href="jsPage.html">Javascript</a>
         <a href="contactUs.html">Contact Us</a>
+        <a href="jobs.html">Jobs</a>
 
       </div>
+    </nav>
+    
+<section>
+    <table style="padding: 2px;">
+        <tr>
+            <td rowspan="2"><img src="/images/pic1.png" width="200px" height="200px"></td>
+            <td><img src="/images/pic2.jpg"></td>
+            <td rowspan="2"><img src="images/pic11.jpeg" width="400px" height="350px">  </td>
+            <td colspan="2"><img src="images/pic12.jpg" width="300px" height="300px">  </td>
+
+        </tr>
+        <tr>
+            <td colspan="2"><img src="images/pic3.png" width="300px" height="300px">  </td>
+            <td></td>
+            <td colspan="1"><img src="images/pic10.jpg" width="300px" height="300px">  </td>
+
+        </tr>
+
+     </table>    
+</section>
 
 
- <table style="padding: 5px;">
-    <tr>
-        <td rowspan="2"><img src="/images/pic1.png" width="200px" height="200px"></td>
-        <td><img src="/images/pic2.jpg"></td>
-    </tr>
-    <tr>
-        <td colspan="2"><img src="images/pic3.png" width="300px" height="300px">  </td>
-    </tr>
 
- </table>
+<footer style="display: block;">
+    <p>Author: Fahad Khamis<br>
+        <a href="mailto:s202012380@kfupm.edu.sa">Email me</a></p>
+        <br>
+        <a href="index.html">Home</a>
+        <a href="htmlPage.html">HTML</a>
+        <a href="cssPage.html">CSS</a>
+        <a href="jsPage.html">Javascript</a>
+        <a href="contactUs.html">Contact Us</a>
+        <a href="jobs.html">Jobs</a>
 
-
-
+        <br><br>
+        <div id="copyright">&copy; 2023 - 2023 www.codebro.com</div>
+        
+<script>
+(function(){
+	let cpr = document.getElementById("copyright");
+	cpr.innerHTML = "&copy; 2023 - "+new Date().getFullYear()+" www.codebro.com - All Rights Reserved.";
+	cpr.innerHTML += "<br/>Last Updated : "+document.lastModified;
+})();
+</script>
+</footer>
 
 
 </body>

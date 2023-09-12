@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Code Bro</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta name="author" content="Fahad Khamis">
+    <meta name="description" content="Website to learn web development">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+</head>
+
+<body>
+    <header>
+        <h1 style="color: black;">Code Bro</h1>
+        <h2 style="color: black;">This website will help you to become a better web developer</h2>
+    </header>
+
+<nav>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="htmlPage.html">HTML</a>
+        <a href="cssPage.html">CSS</a>
+        <a href="jsPage.html">Javascript</a>
+        <a href="contactUs.html">Contact Us</a>
+        <a href="jobs.html">Jobs</a>
+      </div>
+    </nav>
+    
+    <br>
+<!-- form div -->
+<form action="" class="form">
+
+    <p>Enter your name</p>
+    <input type="text" name="name" placeholder="Mohammed Al-Ghamdi" autocomplete="name">  
+
+    <p>Enter your email</p>
+    <input type="text" name="email" placeholder="mohammmem@gmail.com" autocomplete="email"> 
+    
+    <p>Why would you like to join our team?</p>
+    <textarea name="message" cols="40" rows="5" ></textarea>
+
+    <p>Tell us about a story that made you a better person</p>
+    <textarea name="message" cols="40" rows="5" ></textarea>
+
+    <p>Upload your resume</p>
+    <input type="file" id="myFile" name="filename">
+
+    <br><br>
+    <label for="Qualifications">Choose your Academic level</label>
+    <br>
+<input list="Qualifications" name="Qualifications" id="browser">
+
+<datalist id="Qualifications">
+  <option value="High School">
+  <option value="Bachelor">
+  <option value="Master">
+  <option value="PhD">
+</datalist>
+
+<br>
+<p style="padding: 7px;">What technology among these you have background in?</p>
+<br>
+<input type="checkbox" id="html" name="fav_language" value="HTML">
+<label for="html">HTML</label><br>
+
+<input type="checkbox" id="css" name="fav_language" value="CSS">
+<label for="css">CSS</label><br>
+
+<input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
+<label for="javascript">JavaScript</label><br>
+
+<input type="checkbox" id="React" name="fav_language" value="React">
+<label for="javascript">React</label><br>
+
+<input type="checkbox" id="Vue" name="fav_language" value="Vue">
+<label for="Vue">Vue</label><br>
+
+<br>
+    <button class="button" type="submit"> <a href="confirmation.html">Submit</a></button>
+<br>
+<br>
+</form>
+
+
+
+<footer style="display: block;">
+    <p>Author: Fahad Khamis<br>
+        <a href="mailto:s202012380@kfupm.edu.sa">Email me</a></p>
+        <br>
+        <a href="index.html">Home</a>
+        <a href="htmlPage.html">HTML</a>
+        <a href="cssPage.html">CSS</a>
+        <a href="jsPage.html">Javascript</a>
+        <a href="contactUs.html">Contact Us</a>
+        <a href="jobs.html">Jobs</a>
+
+        <br><br>
+        <div id="copyright">&copy; 2023 - 2023 www.codebro.com</div>
+        
+<script>
+(function(){
+	let cpr = document.getElementById("copyright");
+	cpr.innerHTML = "&copy; 2023 - "+new Date().getFullYear()+" www.codebro.com - All Rights Reserved.";
+	cpr.innerHTML += "<br/>Last Updated : "+document.lastModified;
+})();
+</script>
+</footer>
+</body>
+</html>
