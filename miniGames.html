@@ -1,12 +1,42 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-    <title>CSS</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
 
+        .cell {
+            font-family: sans-serif;
+            font-size: larger;
+            font-weight: bolder;
+            background-color: beige;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cell:hover {
+            background-color: blanchedalmond;
+        }
+
+        .row {
+            display: flex;
+        }
+    </style>
 </head>
-
 
 <body>
     <header>
@@ -27,33 +57,8 @@
       </nav>
 
 
-<section>
-    <p>Using css can make your website look way more nice</p>
-</section>
-
-
-
-<footer style="display: block;">
-    <p>Author: Fahad Khamis<br>
-        <a href="mailto:s202012380@kfupm.edu.sa">Email me</a></p>
-        <br>
-        <a href="index.html">Home</a>
-        <a href="htmlPage.html">HTML</a>
-        <a href="cssPage.html">CSS</a>
-        <a href="jsPage.html">Javascript</a>
-        <a href="contactUs.html">Contact Us</a>
-        <a href="jobs.html">Jobs</a>
-
-        <br><br>
-        <div id="copyright">&copy; 2023 - 2023 www.codebro.com</div>
-        
-<script>
-(function(){
-	let cpr = document.getElementById("copyright");
-	cpr.innerHTML = "&copy; 2023 - "+new Date().getFullYear()+" www.codebro.com - All Rights Reserved.";
-	cpr.innerHTML += "<br/>Last Updated : "+document.lastModified;
-})();
-const myMap = {
+      <script>
+         const myMap = {
       index: "index.html",
       html: "htmlPage.html",
       css: "cssPage.html",
@@ -70,10 +75,7 @@ const myMap = {
     document.getElementById("contactLink").href = myMap.contact;
     document.getElementById("jobsLink").href = myMap.jobs;
     document.getElementById("gamesLink").href = myMap.games;
-</script>
-</footer>
-
-
-
+      </script>
 </body>
+
 </html>

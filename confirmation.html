@@ -12,19 +12,17 @@
         <h2 style="color: black;">This website will help you to become a better web developer</h2>
     </header>
 
-<nav>
-    <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="htmlPage.html">HTML</a>
-        <a href="cssPage.html">CSS</a>
-        <a href="jsPage.html">Javascript</a>
-        <a href="contactUs.html">Contact Us</a>
-        <a href="jobs.html">Jobs</a>
-
-
-      </div>
-    </nav>
-
+    <nav>
+        <div class="topnav">
+          <a href="#" id="homeLink">Home</a>
+          <a href="#" id="htmlLink">HTML</a>
+          <a href="#" id="cssLink">CSS</a>
+          <a href="#" id="jsLink">JavaScript</a>
+          <a href="#" id="contactLink">Contact Us</a>
+          <a href="#" id="jobsLink">Jobs</a>
+          <a href="#" id="gamesLink">MiniGames</a>
+        </div>
+      </nav>
         
       <p>Thank you for reaching out</p>
       <button class="button"><a href="index.html">Back to Home Page</a></button>
@@ -43,7 +41,8 @@
             <a href="jsPage.html">Javascript</a>
             <a href="contactUs.html">Contact Us</a>
             <a href="jobs.html">Jobs</a>
-    
+            <a href="miniGames.html">MiniGames</a>
+
             <br><br>
             <div id="copyright">&copy; 2023 - 2023 www.codebro.com</div>
             
@@ -53,6 +52,24 @@
         cpr.innerHTML = "&copy; 2023 - "+new Date().getFullYear()+" www.codebro.com - All Rights Reserved.";
         cpr.innerHTML += "<br/>Last Updated : "+document.lastModified;
     })();
+
+    const myMap = {
+      index: "index.html",
+      html: "htmlPage.html",
+      css: "cssPage.html",
+      js: "jsPage.html",
+      contact: "contactUs.html",
+      jobs: "jobs.html",
+      games: "miniGames.html",
+    };
+
+    document.getElementById("homeLink").href = myMap.index;
+    document.getElementById("htmlLink").href = myMap.html;
+    document.getElementById("cssLink").href = myMap.css;
+    document.getElementById("jsLink").href = myMap.js;
+    document.getElementById("contactLink").href = myMap.contact;
+    document.getElementById("jobsLink").href = myMap.jobs;
+    document.getElementById("gamesLink").href = myMap.games;
     </script>
     </footer>
 

@@ -16,17 +16,20 @@
         <h2 style="color: black;">This website will help you to become a better web developer</h2>
     </header>
 
+
+
 <nav>
     <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="htmlPage.html">HTML</a>
-        <a href="cssPage.html">CSS</a>
-        <a href="jsPage.html">Javascript</a>
-        <a href="contactUs.html">Contact Us</a>
-        <a href="jobs.html">Jobs</a>
+      <a href="#" id="homeLink">Home</a>
+      <a href="#" id="htmlLink">HTML</a>
+      <a href="#" id="cssLink">CSS</a>
+      <a href="#" id="jsLink">JavaScript</a>
+      <a href="#" id="contactLink">Contact Us</a>
+      <a href="#" id="jobsLink">Jobs</a>
+      <a href="#" id="gamesLink">MiniGames</a>
+    </div>
+  </nav>
 
-      </div>
-    </nav>
     
 <section>
     <table style="padding: 2px;">
@@ -47,7 +50,45 @@
      </table>    
 </section>
 
+<button id="helpButton">Help</button>
 
+<div id="helpPopup" role="dialog" aria-labelledby="helpTitle">
+  <h2 id="helpTitle">Keyboard Navigation Help</h2>
+  <p>Use the following keyboard shortcuts to navigate:</p>
+  <ul>
+    <li>Press Tab to move focus to the next element.</li>
+    <li>Press Shift + Tab to move focus to the previous element.</li>
+    <li>...</li>
+  </ul>
+</div>
+
+<script>
+    document.addEventListener("keydown", function(event) {
+  if (event.key === "Tab") {
+    event.preventDefault();
+
+  } else if (event.key === "Tab" && event.shiftKey) {
+    event.preventDefault();
+
+  }
+});
+
+const helpButton = document.getElementById("helpButton");
+const helpPopup = document.getElementById("helpPopup");
+
+helpButton.addEventListener("click", function() {
+  showHelpPopup();
+});
+
+function showHelpPopup() {
+  helpPopup.style.display = "block";
+  helpPopup.focus();
+}
+
+function hideHelpPopup() {
+  helpPopup.style.display = "none";
+}
+</script>
 
 <footer style="display: block;">
     <p>Author: Fahad Khamis<br>
@@ -75,5 +116,26 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<script>
+    const myMap = {
+      index: "index.html",
+      html: "htmlPage.html",
+      css: "cssPage.html",
+      js: "jsPage.html",
+      contact: "contactUs.html",
+      jobs: "jobs.html",
+      games: "miniGames.html",
+    };
+
+    document.getElementById("homeLink").href = myMap.index;
+    document.getElementById("htmlLink").href = myMap.html;
+    document.getElementById("cssLink").href = myMap.css;
+    document.getElementById("jsLink").href = myMap.js;
+    document.getElementById("contactLink").href = myMap.contact;
+    document.getElementById("jobsLink").href = myMap.jobs;
+    document.getElementById("gamesLink").href = myMap.games;
+  </script>
 </body>
 </html>
